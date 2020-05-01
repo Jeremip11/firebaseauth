@@ -6,7 +6,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "url": "https://github.com/ThisIsRudigo/firebaseauth.git"
@@ -18,7 +20,8 @@
     "request": "^2.81.0",
     "request-promise": "^4.2.1",
     "typescript": "^2.7.2",
-    "validator": "^8.2.0"
+    "validator": "^8.2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/express": "^4.11.1",
@@ -28,5 +31,6 @@
     "ts-node": "^5.0.0",
     "tslint": "^5.9.1",
     "typescript": "^2.7.2"
-  }
+  },
+  "snyk": true
 }
